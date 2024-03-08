@@ -15,10 +15,26 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* megformázás + animálás */
 /* kattintás után display: none csak css? */
 #album-btn {
-    color: #000;
+    background-color: #ffffff50;
+    color: saddlebrown;
+    border: 6px solid #ffffff75;
+    border-width: 6px;
+    border-style: solid;
+    border-image: url("../../img/demo.jpg") 30 stretch;
+    padding: .75rem 1rem;
+    text-decoration: none;
+    transition: all .5s;
+}
+
+#album-btn:hover {
+    background-color: #ffffff75;
+    box-shadow: 0 0 1rem #000;
+}
+
+#album-btn:active {
+    transform: scale(.98);
 }
 
 .header {
