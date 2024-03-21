@@ -59,11 +59,17 @@ html, body {
 
 .album {
     display: none;
+}
+
+.album:hover {
+    box-shadow: 0 0 1rem black;
+}
+
+.album:target {
+    display: grid;
     grid-template-areas: 
         'myArea myArea myArea'
         '. . .';
-    /* grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px; */
     border: .5rem solid saddlebrown;
     border-top-right-radius: .5rem;
     border-top-left-radius: .5rem;
@@ -74,14 +80,6 @@ html, body {
 @keyframes album {
     from { opacity: 0; }
     to { opacity: 1; }
-}
-
-.album:hover {
-    box-shadow: 0 0 1rem black;
-}
-
-.album:target {
-    display: grid;
 }
 
 .album > .img {
