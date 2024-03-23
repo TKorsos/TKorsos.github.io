@@ -1,28 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Album</title>
+    <title>Képnézegető</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <a href="#photos" id="album-btn">Album megnyitása</a>
-    <!-- új -->
-    <iframe src="./test.txt" frameborder="0"></iframe>
-    <div id="photos" class="album">
-        <div class="img header">
-            <a href="./index.html" class="exit">x</a>
+    <main class="container">
+        <section class="row">
+            <article class="col">
+                <h1>Album</h1>
+            </article>
+        </section>
+        <section class="row">
+            <!-- album -->
+            <article class="col album-container">
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000690-1dd551dd59/450/3cd234456afc8c768658ea7fd631fe79.webp?ph=5bcc924bf0" alt="demo"  data-id="0">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000234-35138360aa/DSCF0112.JPG?ph=5bcc924bf0" alt="demo" data-id="1">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000233-1020711202/DSCF0110.JPG?ph=5bcc924bf0" alt="demo" data-id="2">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000161-73b2b74ab5/DSCF0010-7.jpg?ph=5bcc924bf0" alt="demo" data-id="3">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000155-b4019b4fef/DSCF9083-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="4">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000158-351563613c/DSCF9088-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="5">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000156-8bf7a8cf95/DSCF9092-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="6">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000157-610b1620b7/DSCF9096-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="7">
+                </div>
+                <div class="img-box">
+                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000159-9fb93a0a90/DSCF9046_jav.jpg?ph=5bcc924bf0" alt="demo" data-id="8">
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- képnézegető -->
+    <!-- megnyitja az aktuálisan kattintott képet majd megjeleníti és lehet lapozni a képek közt -->
+    <div class="img-viewer js-img-viewer">
+        <div class="img-viewer-box">
+            <button class="previous-btn js-previous-btn">
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </button>
+            <div class="img-item js-img-item"></div>
+            <button class="next-btn js-next-btn">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+            <button class="exit-btn js-exit-btn">
+                <i class="bi bi-x-square"></i>
+            </button>
         </div>
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000690-1dd551dd59/450/3cd234456afc8c768658ea7fd631fe79.webp?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000234-35138360aa/DSCF0112.JPG?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000233-1020711202/DSCF0110.JPG?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000161-73b2b74ab5/DSCF0010-7.jpg?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000155-b4019b4fef/DSCF9083-jav.jpg?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000158-351563613c/DSCF9088-jav.jpg?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000156-8bf7a8cf95/DSCF9092-jav.jpg?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000157-610b1620b7/DSCF9096-jav.jpg?ph=5bcc924bf0" alt="demo">
-        <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000159-9fb93a0a90/DSCF9046_jav.jpg?ph=5bcc924bf0" alt="demo">
     </div>
+
+    <script src="./scripts.js"></script>
 </body>
+
 </html>
