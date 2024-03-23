@@ -4,7 +4,6 @@ let prevBtn = document.querySelector('.js-previous-btn');
 let nextBtn = document.querySelector('.js-next-btn');
 let imgs = document.querySelectorAll('.col > .img-box > .img');
 let exitBtn = document.querySelector('.js-exit-btn');
-let imgOpacity;
 
 // kattintás az albumon egy képre
 function album() {
