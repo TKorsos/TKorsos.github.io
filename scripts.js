@@ -4,6 +4,7 @@ let prevBtn = document.querySelector('.js-previous-btn');
 let nextBtn = document.querySelector('.js-next-btn');
 let imgs = document.querySelectorAll('.col > .img-box > .img');
 let exitBtn = document.querySelector('.js-exit-btn');
+let imgOpacity;
 
 // kattintás az albumon egy képre
 function album() {
@@ -14,23 +15,42 @@ function album() {
             src="${src}" data-id="${index}" alt="demo">`;
 
             document.querySelector(".js-img-viewer").classList.add("img-viewer-flex");
+            if(document.querySelector(".js-img-viewer").classList.contains("img-viewer-flex")) {
+                document.querySelector(".js-img-viewer").classList.add("img-viewer-open");
+            }
         });
     });
 }
 
 // kilépés a képnézegetőből
 function exit() {
-    document.querySelector(".js-img-viewer").classList.remove("img-viewer-flex");
+    document.querySelector(".js-img-viewer").classList.remove("img-viewer-open");
+    
+    if(!document.querySelector(".js-img-viewer").classList.contains("img-viewer-open")) {
+        document.querySelector(".js-img-viewer").classList.add("img-viewer-exit");
+    }
+    
+    if(document.querySelector(".js-img-viewer").classList.contains("img-viewer-exit")) {
+        setTimeout(()=> {
+            document.querySelector(".js-img-viewer").classList.remove("img-viewer-flex");
+
+            if(!document.querySelector(".js-img-viewer").classList.contains("img-viewer-flex")) {
+                document.querySelector(".js-img-viewer").classList.remove("img-viewer-exit");
+            }
+        }, 900);
+    }
 }
 
 // előző képet töltse be
 function prevImgBtn() {
     let img = document.querySelector('.js-img-item > .img');
-    // van-e eleme, ha van akkor hajtsa végre
+
     if (document.querySelector('.js-img-item').contains(img) === true) {
         let dataId = img.getAttribute("data-id");
+
         imgs.forEach((element, index) => {
             let imgsLength = imgs.length;
+
             if (element.getAttribute("data-id") === dataId) {
                 if (index === 0) {
                     let srcLast = imgs[imgsLength - 1].getAttribute("src");
@@ -54,11 +74,13 @@ function prevImgBtn() {
 // következő képet töltse be
 function nextImgBtn() {
     let img = document.querySelector('.js-img-item > .img');
-    // van-e eleme, ha van akkor hajtsa végre
+
     if (document.querySelector('.js-img-item').contains(img) === true) {
         let dataId = img.getAttribute("data-id");
+
         imgs.forEach((element, index) => {
             let imgsLength = imgs.length;
+
             if (element.getAttribute("data-id") === dataId) {
                 if (index === (imgsLength - 1)) {
                     let srcFirst = imgs[0].getAttribute("src");
