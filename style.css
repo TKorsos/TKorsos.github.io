@@ -2,6 +2,7 @@
 
 * {
     box-sizing: border-box;
+    hyphens: auto;
 }
 
 html, body {
@@ -66,10 +67,6 @@ h1 {
     position: fixed;
     top: 0;
     background-color: rgba(0, 0, 0, .8);
-    /*
-    width: 90%;
-    max-width: 1200px;
-    */
     width: 100vw;
     height: 100vh;
     aspect-ratio: 4 / 3;
@@ -77,6 +74,24 @@ h1 {
 
 .img-viewer-flex {
     display: flex;
+}
+
+.img-viewer-open {
+    animation: opacity 1s;
+}
+
+@keyframes opacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.img-viewer-exit {
+    animation: opacity-exit 1s;
+}
+
+@keyframes opacity-exit {
+    from { opacity: 1; }
+    to { opacity: 0; }
 }
 
 .img-viewer-box {
@@ -96,19 +111,23 @@ h1 {
 .img-item > .img {
     width: 100%;
     aspect-ratio: 1;
-    object-fit: cover;
-    /* contain lehet jobb lesz */
     object-fit: contain;
 }
 
 .exit-btn {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 1.5rem;
+    right: 1.5rem;
     background-color: transparent;
     border: 1px solid transparent;
     font-size: calc(100ch / 20);
     cursor: pointer;
+}
+
+.bi-x-square {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
 }
 
 .previous-btn, .next-btn {
@@ -150,4 +169,21 @@ h1 {
 
 .bi-arrow-right-circle-fill:hover {
     transform: translateX(.3rem);
+}
+
+@media screen and (max-width: 360px) {
+    .col:has( > .img-box) {
+        grid-template-columns: 1fr;
+        padding: 0 .5rem;
+        gap: .5rem;
+    }
+
+    .img-box {
+        width: 100%!important;
+    }
+
+    .col:has( > h1) {
+        grid-template-columns: 1fr!important;
+        font-size: calc(100ch / 20)!important;
+    }
 }
