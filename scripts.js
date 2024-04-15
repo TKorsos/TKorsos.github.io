@@ -106,7 +106,9 @@ function render() {
     album();
     exitBtn.addEventListener("click", exit);
     prevBtn.addEventListener("click", prevImgBtn);
+    prevBtn.addEventListener("touchmove", prevImgBtn);
     nextBtn.addEventListener("click", nextImgBtn);
+    nextBtn.addEventListener("touchmove", nextImgBtn);
 }
 
 render();
