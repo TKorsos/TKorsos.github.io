@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive, Arial, Helvetica, sans-serif;
+    background-color: #ffeded;
+    background-color: whitesmoke;
+    color: #393939;
+}
+
+:focus {
+    border-color: transparent!important;
+    box-shadow: 1px 1px 1px transparent inset, 0 0 8px transparent!important;
+    outline: 0 none!important;
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(255, 255, 200)!important;
+    background-color: rgb(255, 255, 245)!important;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5), 0 0 8px rgba(0, 0, 0, .3)!important;
+    outline: 0 none!important;
+}
+
+input:focus + label::after {
+    background-color: rgb(255, 255, 245)!important;
+}
+
+.rounded-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}

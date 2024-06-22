@@ -1,85 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="hu">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Képnézegető</title>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Várkuti Tünde Krisztina tervezőgrafikus</title>
+    <link rel="shortcut icon" href="./kepek/favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Another Link</a></li>
-                <li><a href="#">Another</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
-        </nav>
+    <header class="container-lg">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <nav class="navbar navbar-expand-lg py-4">
+                    <div class="container-fluid">
+                        <img src="./kepek/favicon/favicon.ico" alt="Logo" width="85" height="60" class="d-inline-block align-text-top">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Kezdőlap</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Portfólió
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="./aloldalak/portfolio.html#arculat">Arculat</a></li>
+                                      <li><a class="dropdown-item" href="./aloldalak/portfolio.html#kiadvanyok">Kiadványok</a></li>
+                                      <li><a class="dropdown-item" href="./aloldalak/portfolio.html#kreativok">Kreatívok</a></li>
+                                      <li><a class="dropdown-item" href="./aloldalak/portfolio.html#elektronikus">Elektronikus felületek</a></li>
+                                      <li><a class="dropdown-item" href="./aloldalak/portfolio.html#illusztraciok">Illusztrációk</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./aloldalak/rolam.html">Rólam</a>
+                                </li>
+                                <li class="nav-item">
+                                    <li class="nav-item dropdown">
+                                      <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Blog
+                                      </a>
+                                      <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="./aloldalak/blog.html#libajatek">Libajáték</a></li>
+                                        <li><a class="dropdown-item" href="./aloldalak/blog.html#diploma">DiploMA</a></li>
+                                        <li><a class="dropdown-item" href="./aloldalak/blog.html#szovet">"Saját magunkat szőjük szövetté"</a></li>
+                                        <li><a class="dropdown-item" href="./aloldalak/blog.html#vasarely">Vasarely domino</a></li>
+                                      </ul>
+                                    </li>
+                                  </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./aloldalak/kapcsolat.html">Kapcsolat</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
-    <main class="container">
-        <section class="row">
-            <article class="col">
-                <h1>Album</h1>
-            </article>
-        </section>
-        <section class="row">
-            <!-- album -->
-            <article class="col album-container">
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000690-1dd551dd59/450/3cd234456afc8c768658ea7fd631fe79.webp?ph=5bcc924bf0" alt="demo"  data-id="0">
+
+    <main class="container-lg py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="container-fluid">
+                    <section class="row pb-5">
+                        <article class="col">
+                            <h1>főcím helye</h1>
+                        </article>
+                    </section>
+                    <section class="row pb-5">
+                        <article class="col">
+                            <div class="mb-3">
+                                <img src="./kepek/sablon/sablon.webp" alt="sablon" class="w-100">
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut porro similique ab, dolor fugiat corrupti atque cumque quos ut, veritatis quaerat voluptas iste impedit commodi sapiente? Cumque optio rem debitis nobis, dolorum aut non placeat sapiente! Blanditiis reprehenderit corporis ullam?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus velit, officiis exercitationem perferendis voluptatem impedit tempora quos atque sapiente. Corporis, distinctio tempora! Non quaerat cum quia animi ex est doloribus dolore atque exercitationem? Fuga nemo possimus mollitia officia rem! Vel porro odit illum. Alias!
+                            </p>
+                        </article>
+                    </section>
+                    <section class="row pb-5">
+                        <article class="col-12 mb-3">
+                            <div>
+                                <h2>cím helye</h2>
+                            </div>
+                        </article>
+                        <article class="col-lg-4">
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto numquam earum, atque culpa in similique! Rerum velit accusamus esse reprehenderit. Iure aperiam corrupti explicabo suscipit minus ab voluptatum expedita illo illum reprehenderit ut nulla placeat voluptates a fugiat quisquam nobis, saepe voluptate sapiente assumenda. Rerum autem obcaecati dolores aspernatur. Hic, officiis unde.
+                            </p>
+                        </article>
+                        <article class="col-lg-4">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quia vero! Nam, voluptatibus ipsum! Optio nisi vel, iste veritatis totam quidem ipsam voluptatum tempore ex assumenda nulla cumque fuga adipisci iusto dignissimos itaque alias ratione dolorum est mollitia aliquam reprehenderit laboriosam illum unde. Inventore temporibus nulla quia ab reprehenderit cumque?.
+                            </p>
+                        </article>
+                        <article class="col-lg-4">
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias totam labore tenetur officiis eos ad nisi, dicta culpa ut dolorum voluptatem? Assumenda iusto nesciunt ipsam? Odio voluptates, magni illo sed debitis doloremque officiis maxime, repellat dolores itaque dolor ad!
+                            </p>
+                        </article>
+                    </section>
+                    <section class="row pb-5">
+                        <article class="col-12 mb-3">
+                            <div>
+                                <h2>cím helye</h2>
+                            </div>
+                        </article>
+                        <article class="col-lg-4">
+                            <div class="mb-3 mb-lg-0">
+                                <img src="./kepek/sablon/sablon.webp" alt="sablon" class="w-100">
+                            </div>
+                        </article>
+                        <article class="col-lg-8">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, quia vero! Nam, voluptatibus ipsum! Optio nisi vel, iste veritatis totam quidem ipsam voluptatum tempore ex assumenda nulla cumque fuga adipisci iusto dignissimos itaque alias ratione dolorum est mollitia aliquam reprehenderit laboriosam illum unde. Inventore temporibus nulla quia ab reprehenderit cumque?.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="row pb-5">
+                        <article class="col">
+                            <h2>Feliratkozás</h2>
+                            <form class="input-group">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="E-mail cím" name="email">
+                                    <label for="email">E-mail cím</label>
+                                </div>
+                                <button class="btn btn-primary">Feliratkozás</button>
+                            </form>
+                        </article>
+                    </section>
                 </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000234-35138360aa/DSCF0112.JPG?ph=5bcc924bf0" alt="demo" data-id="1">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000233-1020711202/DSCF0110.JPG?ph=5bcc924bf0" alt="demo" data-id="2">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000161-73b2b74ab5/DSCF0010-7.jpg?ph=5bcc924bf0" alt="demo" data-id="3">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000155-b4019b4fef/DSCF9083-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="4">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000158-351563613c/DSCF9088-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="5">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000156-8bf7a8cf95/DSCF9092-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="6">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000157-610b1620b7/DSCF9096-jav.jpg?ph=5bcc924bf0" alt="demo" data-id="7">
-                </div>
-                <div class="img-box">
-                    <img class="img" src="https://5bcc924bf0.cbaul-cdnwnd.com/bbcfd7a1163d7e0f9cab28dc5b1e6da0/200000159-9fb93a0a90/DSCF9046_jav.jpg?ph=5bcc924bf0" alt="demo" data-id="8">
-                </div>
-            </article>
-        </section>
+            </div>
+        </div>
     </main>
 
-    <!-- képnézegető -->
-    <!-- megnyitja az aktuálisan kattintott képet majd megjeleníti és lehet lapozni a képek közt -->
-    <div class="img-viewer js-img-viewer">
-        <div class="img-viewer-box">
-            <button class="previous-btn js-previous-btn">
-                <i class="bi bi-arrow-left-circle-fill"></i>
-            </button>
-            <div class="img-item js-img-item"></div>
-            <button class="next-btn js-next-btn">
-                <i class="bi bi-arrow-right-circle-fill"></i>
-            </button>
-            <button class="exit-btn js-exit-btn">
-                <i class="bi bi-x-square"></i>
-            </button>
+    <footer class="container-lg pb-4">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="container-fluid border border-0 border-top pt-4">
+                    <div class="row">
+                        <div class="col-12 text-center js-footer"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </footer>
 
-    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./js/scripts.js"></script>
 </body>
 
 </html>
