@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="title"></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body data-id="plebania">
+    <nav class="navbar navbar-expand-lg fixed-top main-bg-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            class="main-logo"
+            src="./assets/imgs/logo/templom_logo.png"
+            alt="plébánia logó"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav mx-auto mb-2 mb-lg-0 justify-content-center flex-wrap"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"
+                >KEZDŐLAP</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./views/templom.html"
+                >PLÉBÁNIA, TEMPLOM, URNATEMETŐ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">VÉDŐSZENTJEINK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AKTUALITÁSOK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">RÓLUNK</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">HITÉLET</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">AJÁNLÓ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                MÉDIAMEGJELENÉSEINK
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">3</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">FOTÓALBUMOK</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-lg-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="./index.html#elerhetosegunk"
+              >
+                ELÉRHETŐSÉGÜNK
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header
+      class="main-header d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="d-flex flex-column gap-5 text-center">
+        <h1><span>Szeretettel köszöntünk honlapunkon!</span></h1>
+        <h1><span>Szent Adalbert Plébánia</span></h1>
+        <h1><span>Boldog Meszlényi Zoltán Templom</span></h1>
+      </div>
+    </header>
+
+    <main class="container-fluid main-padding">
+      <section class="row row-cols-1 gap-3 pb-5 justify-content-center">
+        <article class="col text-center">
+          <h2><strong>Rólunk</strong></h2>
+        </article>
+        <article class="col-sm-10 col-md-8 col-lg-6">
+          <p>
+            A Szent Adalbert Plébánia története 1919-ben kezdődött, amikor Havlicsek Vince hitoktató misézni kezdett a Hengermalom úti iskola tornatermében. Az évek során több helyszínen működtek, míg végül 2013-ban Erdő Péter bíboros letette az új templom alapkövét az Etele út-Peztvál József utca sarkán. Az új templom építése 2014-ben fejeződött be, és a közösség azóta is itt tartja szertartásait. Az új templom közelében külön harangtorony áll, ahol a két régebbi, kisebb mellett egy újabb harang is lakik, amelyet egy mecénás öntetett Boldog Meszlényi Zoltán tiszteletére. Az új templom építtetője az Esztergom-Budapesti Főegyházmegye, a terveket a Jahoda és Páricsy Építész-iroda készítette, a kivitelezést pedig az ALP-INTER MAGASÉPÍTŐ Kft. végezte.
+          </p>
+        </article>
+        <article class="col-sm-10 col-md-8 col-lg-6">
+          <p>
+            Plébániai kormányzó: <span class="fw-bold">Kelemen László</span>
+          </p>
+        </article>
+        <article class="col-sm-10 col-md-8 col-lg-6 text-center">
+          <a href="#" class="btn btn-primary rounded-0">
+            Bővebben
+          </a>
+        </article>
+      </section>
+      <section class="row row-cols-1 gap-3 pb-5">
+        <article class="col d-flex justify-content-evenly banner">
+          <span class="text-uppercase">quae sursum sunt quaerite</span>
+          <span class="text-uppercase">az odafent valókat keressétek</span>
+        </article>
+      </section>
+      <section class="row row-cols-1 gap-3 pb-5">
+        <article class="col text-center">
+          <h2>
+            <strong>Templom, plébánia, urnatemető egy helyen</strong>
+          </h2>
+          <h3>
+            <strong>AKADÁLYMENTESÍTETT</strong>
+          </h3>
+          <div>
+            <p>
+              <strong>1119 Budapest, Etele út 3</strong>
+            </p>
+          </div>
+          <div>
+            <p>
+              <strong>
+                <a
+                  href="https://www.google.com/maps/uv?pb=!1s0x4741dda32b2451a3%3A0x7138f44b7d6959b6!3m1!7e115!4s%2Fmaps%2Fplace%2Fboldog%2Bmeszl%25C3%25A9nyi%2Bbudapest%2F%4047.4627082%2C19.040642%2C3a%2C75y%2C24.9h%2C90t%2Fdata%3D*213m4*211e1*213m2*211soMcDnmwWk92k41vH_CrgEQ*212e0*214m2*213m1*211s0x4741dda32b2451a3%3A0x7138f44b7d6959b6%3Fsa%3DX!5sboldog%20meszl%C3%A9nyi%20budapest%20-%20Google-keres%C3%A9s!15sCgIgARICCAI&imagekey=!1e2!2soMcDnmwWk92k41vH_CrgEQ&hl=hu&sa=X&ved=2ahUKEwin6uzP44T-AhVo_SoKHS40BTQQpx96BQiEARAN&viewerState=im"
+                  target="_blank"
+                  >KATT IDE EGY VIRTUÁLIS SÉTÁÉRT A TEMPLOM KÖRÜL</a
+                >
+              </strong>
+            </p>
+          </div>
+        </article>
+        <article class="col pt-3 pt-lg-0">
+          <div class="container-fluid px-0">
+            <div
+              class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center gy-5 gy-lg-0"
+            >
+              <div class="col">
+                <div class="card border-0 rounded-0 gap-3 main-bg-color">
+                  <img
+                    src="./assets/imgs/pics/minta.jpg"
+                    class="card-img-top rounded-0"
+                    alt="minta"
+                  />
+                  <div class="card-body text-center d-flex flex-column gap-2">
+                    <h4 class="card-title">
+                      <strong>MISEREND</strong>
+                    </h4>
+                    <h5 class="card-title">
+                      <strong>a Boldog Meszlényi Zoltán Templomban</strong>
+                    </h5>
+                    <div class="card-text">
+                      Hétfő, kedd szerda és csütörtök:
+                    </div>
+                    <div class="card-text">7:00 és 8:00</div>
+                    <div class="card-text">Péntek:</div>
+                    <div class="card-text">7:00, 8:00 és 18:00</div>
+                    <div class="card-text">Szombat:</div>
+                    <div class="card-text">8:00, 16:00* és 18:00</div>
+                    <div class="card-text">Vasárnap:</div>
+                    <div class="card-text">
+                      7:00, 8:00, 9:00, 10:30 és 18:00
+                    </div>
+                    <div class="card-text">
+                      Adventi időben roráték hétfőtől péntekig reggel 6 órakor
+                      vannak és 7 órai szentmise elmarad.
+                    </div>
+                    <div class="card-text">
+                      *Koreai közösség miséje A fentiektől eltérő miserend külön
+                      kerül meghirdetésre.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 rounded-0 gap-3 main-bg-color">
+                  <img
+                    src="./assets/imgs/pics/minta.jpg"
+                    class="card-img-top rounded-0"
+                    alt="minta"
+                  />
+                  <div class="card-body text-center d-flex flex-column gap-2">
+                    <h4 class="card-title">
+                      <strong>PLÉBÁNIA IRODA</strong>
+                    </h4>
+                    <div class="card-text">Telefon: +36 1 790 2908 / 11</div>
+                    <div class="card-text">Hivatalos órák az irodában:</div>
+                    <div class="card-text">
+                      Kedd 10.15 -12:00 és 16:00-18:00
+                    </div>
+                    <div class="card-text">
+                      Csütörtök 10:15 -12:00 és 16:00-18:00
+                    </div>
+                    <div class="card-text">
+                      Kisebb ügyekben a szentmisék előtt és után.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-0 rounded-0 gap-3 main-bg-color">
+                  <img
+                    src="./assets/imgs/pics/minta.jpg"
+                    class="card-img-top rounded-0"
+                    alt="minta"
+                  />
+                  <div class="card-body text-center d-flex flex-column gap-2">
+                    <h4 class="card-title">
+                      <strong>URNATEMETŐ IRODA</strong>
+                    </h4>
+                    <h5 class="card-title">
+                      <strong>a Szent Adalbert Plébánián</strong>
+                    </h5>
+                    <div class="card-text">Telefon: +36 1 790 2908 / 12</div>
+                    <div class="card-text">Hivatalos órák az irodában:</div>
+                    <div class="card-text">Kedd 15:00-18:00</div>
+                    <div class="card-text">Csütörtök 15:00-18:00</div>
+                    <h5 class="card-title">
+                      <strong>ALTEMPLOM ÉS URNATEMETŐ</strong>
+                    </h5>
+                    <div class="card-text">Nyitvatartás:</div>
+                    <div class="card-text">Kedd 15:00-18:00*</div>
+                    <div class="card-text">Csütörtök 15:00-18-00*</div>
+                    <div class="card-text">
+                      *Nyitás kérhető az urnairodában.
+                    </div>
+                    <div class="card-text">Szombat 15:30-17:30</div>
+                    <a href="#" class="btn btn-primary rounded-0"
+                      >Információk az urnatemetőről</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="row row-cols-1 gap-3 pb-5" id="szentsegek">
+        <article class="col text-center">
+          <h2><strong>Szentségek felvétele</strong></h2>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Keresztelés</h3>
+              <p>
+                Keresztelés • Gyermek keresztelés • Egyház tagjává tesz •
+                Katolikus nevelés • Védőszentet kap
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Bérmálás</h3>
+              <p>
+                Bérmálás • Megerősít a Szentlélek • Keresztségi fogadalom • Hitünk
+                szerint éljünk • Krisztus tanúja
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Eucharisztia / Elsőgyónás - Elsőáldozás</h3>
+              <p>
+                Eucharisztia • Elsőáldozás • Krisztus Testét veszi magához • Lelki fejlődés • Tiszta lélekkel • Rendszeresen áldoz
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Bűnbánat (gyónás)</h3>
+              <p>
+                Bűnbánat • Gyónás • Bűnbocsánat • Megbocsátás • Szentmise
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Betegek kenete</h3>
+              <p>
+                Betegek kenete • Szentségekkel való sürgősségi ellátás • Kórházlelkészi Szolgálat • Szentgyónás • Szentáldozás
+              </p>
+            </div>
+          </a>
+        </article>
+        <article class="col">
+          <a href="#" class="text-decoration-none text-light szentsegek-link">
+            <div class="szentsegek-box">
+              <h3>Házasság</h3>
+              <p>
+                Házassági felkészítés • Házassági ígéret • Egyházi szertartás • Házassági szentség • Esküvő • Egyházi házasság
+              </p>
+            </div>
+          </a>
+        </article>
+      </section>
+      <section class="row row-cols-1 gap-5 pb-5">
+        <article class="col text-center">
+          <h2><strong>Aktuális hirdetéseink</strong></h2>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-center">
+              <strong> Ismerkedjünk meg a Jubileumi Szentév logójával! </strong>
+            </h3>
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-center">
+              <strong> Egynapos zarándoklat </strong>
+            </h3>
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-center">
+              <strong> Plébániai zarándoklatot indítunk Medjugorjéba </strong>
+            </h3>
+            <h4 class="text-center">
+              <strong> a Via Sacra szervezésében </strong>
+            </h4>
+            <h4 class="text-center">
+              <strong> 2025. március 24-28. </strong>
+            </h4>
+            <h4 class="text-center">
+              <strong>
+                További részletek és jelentkezés <a href="#">ITT</a>.
+              </strong>
+            </h4>
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+            <div>
+              <h4>Olvasnivalók Medjugorjéról:</h4>
+              <h4>
+                A <a href="#">Bizd Rá Magad</a> honlapon és a Bízd Rá Magad
+                <a href="#">ajánlásával</a>.
+              </h4>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+            <h4 class="text-center">
+              <strong>
+                Az újabb vetítésre és beszélgetésre előreláthatólag január
+                31-én, pénteken az esti szentmise után kerül sor.
+              </strong>
+            </h4>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-center text-uppercase">
+              <strong> Évközi 2. vasárnap </strong>
+            </h3>
+            <h4>
+              <strong class="d-flex flex-row gap-5">
+                <span>Hirdetéseink</span>
+                <span>2025. január 19.</span>
+              </strong>
+            </h4>
+            <ol class="ps-3">
+              <li>
+                A keresztény egységért meghirdetett ökomenikus imahét
+                megnyitására a mai napon, a Deák téri evangélikus templomban, a
+                18 órai országos nyitó istentisztelettel kerül sor.
+                Szentbeszédet mond: Dr. Erdő Péter bíboros, igét hirdet:
+                Steinbach József református püspök.
+              </li>
+              <li>
+                Jövő vasárnap Isten Igéjének vasárnapja lesz, ami egyben a
+                keresztények egységéért végzett imahét zárása. A kerületi közös
+                imaalkalmak rendje megtalálható a hirdetőtáblán.
+              </li>
+              <li>
+                Hirdetem előre hogy egy zarándoklatot fogok vezetni február 8-án
+                Csehimindszentre és Zalaegerszegre. Részletek és jelentkezési
+                lehetőség megtalálható plébániánk honlapján és a kitett
+                plakáton.
+              </li>
+              <li>
+                Február 1-én, szombaton délelőtt 10 órakor családi közös
+                éneklést rendezünk a Szűzanya tiszteletére. A Szent Adalbert
+                teremben találkozunk, ahol a kórussal együtt énekeljük a szép
+                népénekeket, és kórusműveket hallgatunk. Mindazok, akik szívesen
+                csatlakoznának a kórus énekéhez, bátran jöjjenek!
+              </li>
+            </ol>
+            <h3 class="text-center">Aktuális kiadványaink itt elérhetőek:</h3>
+            <h4 class="text-center">
+              A nyári időszakban kiadványaink megjelenése szünetel.
+            </h4>
+            <div class="d-flex flex-column gap-3 text-center">
+              <a href="#">Plébánia lap</a>
+              <a href="#">Veled Vagyunk</a>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <h3 class="text-center">
+              <strong> Jubileumunk hírei </strong>
+            </h3>
+            <h4 class="text-center">
+              <strong>
+                A templomszentelés évfordulója alkalmából indított virtuális
+                időutazásunk a továbbiakban a "Rólunk" menűpont alatt érhető el!
+              </strong>
+            </h4>
+            <h4>
+              <strong> Emlékkönyv ajándékba? </strong>
+            </h4>
+            <div>
+              <img
+                src="./assets/imgs/pics/minta.jpg"
+                alt="minta"
+                class="w-100"
+              />
+            </div>
+            <p class="text-center">
+              <strong>
+                <a href="#"> Katt ide a könyv online megtekintéséhez! </a>
+              </strong>
+            </p>
+          </div>
+        </article>
+      </section>
+      <section class="row row-cols-1 gap-3">
+        <article class="col text-center">
+          <h2><strong>Csatlakozz közösségünkhöz!</strong></h2>
+        </article>
+        <article class="col">
+          <div class="cta-flex">
+            <div class="cta-flex-item">
+              Szeretettel várunk mindenkit a Szent Adalbert Plébánia közösségébe. Iratkozz fel hírlevelünkre, hogy értesülj a legfrissebb hírekről, eseményekről és programokról!
+            </div>
+            <div class="cta-flex-item">
+              <form>
+                <div class="input-group">
+                  <input type="email" class="form-control rounded-0" placeholder="Add meg az E-mail címed!" aria-label="cta-email" aria-describedby="cta-email" name="cta-email">
+                  <button class="btn btn-primary rounded-0" type="button" id="cta-email">Feliratkozás</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer
+      class="container-fluid text-center main-padding pt-0"
+      id="elerhetosegunk"
+    >
+      <section class="row row-cols-1">
+        <article class="col">
+          <div class="d-flex flex-column gap-3 pb-5">
+            <h3>
+              <strong>
+                <a
+                  href="https://www.google.com/maps/uv?pb=!1s0x4741dda32b2451a3%3A0x7138f44b7d6959b6!3m1!7e115!4s%2Fmaps%2Fplace%2Fboldog%2Bmeszl%25C3%25A9nyi%2Bbudapest%2F%4047.4627082%2C19.040642%2C3a%2C75y%2C24.9h%2C90t%2Fdata%3D*213m4*211e1*213m2*211soMcDnmwWk92k41vH_CrgEQ*212e0*214m2*213m1*211s0x4741dda32b2451a3%3A0x7138f44b7d6959b6%3Fsa%3DX!5sboldog%20meszl%C3%A9nyi%20budapest%20-%20Google-keres%C3%A9s!15sCgIgARICCAI&imagekey=!1e2!2soMcDnmwWk92k41vH_CrgEQ&hl=hu&sa=X&ved=2ahUKEwin6uzP44T-AhVo_SoKHS40BTQQpx96BQiEARAN&viewerState=im"
+                  target="_blank"
+                >
+                  Elérhetőségünk
+                </a>
+              </strong>
+            </h3>
+            <h4>A templom, a plébánia illetve az urnatemető megközelíthető</h4>
+            <p class="d-flex flex-column">
+              <span>a 213 számú <span class="fw-bold">busszal</span>, </span>
+              <span
+                >az 1, 17, 41, 47, 48, 56 számú
+                <span class="fw-bold">villamossal</span></span
+              >
+              <span>az Etele út / Fehérvári út megállótól.</span>
+            </p>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-5 pb-5">
+            <div class="ratio ratio-21x9">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976!2d19.0408266!3d47.463042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s1119+BUDAPEST%2C+ETELE+%C3%9AT+3.!5e0!3m2!1shu!2sHU!4v1737737510000"
+                frameborder="0"
+                loading="lazy"
+                class="w-100 h-100"
+              ></iframe>
+            </div>
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center align-items-lg-baseline text-start"
+            >
+              <div class="w-50 d-flex flex-column gap-3 py-2">
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                  <div>
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div>Cím: 1119 Budapest, Etele út 3.</div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                  <div>
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div>
+                    Plébánia iroda telefon: +36 1 790 2908 / 11 Urnatemető iroda
+                    telefon: +36 1 790 2908 / 12
+                  </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                  <div>
+                    <i class="bi bi-envelope"></i>
+                  </div>
+                  <div>
+                    E-mail: sztadalbertpl@gmail.com Postai cím: 1119 Budapest,
+                    Etele út 3.
+                  </div>
+                </div>
+                <div class="d-flex flex-column flex-sm-row gap-3">
+                  <div>
+                    <i class="bi bi-cash-stack"></i>
+                  </div>
+                  <div>
+                    Bankszámla: CIB Bank Budapest-Lágymányosi Szent Adalbert
+                    Plébánia 10701094-73967732-51100005
+                  </div>
+                </div>
+              </div>
+              <div class="w-50 pt-5 pt-lg-0 d-flex justify-content-lg-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./views/templom.html">
+                      PLÉBÁNIA, TEMPLOM, URNATEMETŐ
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">VÉDŐSZENTJEINK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AKTUALITÁSOK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">RÓLUNK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HITÉLET</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">AJÁNLÓ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">MÉDIAMEGJELENÉSEINK</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FOTÓALBUMOK</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <div class="d-flex flex-column gap-3">
+            <span
+              >© 2022-<span id="js-year"></span> Szent Adalbert Plébánia, 1119
+              Budapest, Etele út 3.</span
+            >
+            <span>Sütik</span>
+          </div>
+        </article>
+      </section>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
