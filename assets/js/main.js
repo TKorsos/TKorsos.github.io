@@ -1,7 +1,6 @@
 let body = document.querySelector("body");
 let title = document.querySelector(".title");
 let thisYear = document.querySelector("#js-year");
-
 const titleObj = {
     "plebania": "Plébánia",
     "templom": "Plébánia, templom, urnatemető",
