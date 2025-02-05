@@ -1,13 +1,15 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
-    --main-clr: rgb(240, 240, 240);
-    --secondary-clr: rgb(20, 20, 20);
-    --third-clr: rgb(100, 100, 255);
+    --main-clr: rgb(255, 252, 244);
+    --secondary-clr: rgb(34, 34, 34);
+    --third-clr: rgb(109, 62, 7);
     --third-clr-hov: rgb(138, 138, 252);
     --third-clr-active: rgb(89, 89, 214);
+    --fourth-clr: #F5F5DC;
     --main-bg: var(--main-clr);
     --main-font-clr: var(--secondary-clr);
+    --header-bg: rgba(0, 0, 0, .8);
     --logo-w: 3.75rem;
     --logo-h: 3.75rem;
     --header-mt: 5.375rem;
@@ -125,25 +127,31 @@ h3 {
     flex-direction: column;
     justify-content: center;
     border: 1px solid var(--szentseg-clr);
-    background-color: var(--szentseg-clr);
+    background-color: var(--main-clr);
     padding: var(--szentseg-padding);
     transition: all .6s;
 }
 
+.szentsegek-box > h3 {
+    color: var(--szentseg-clr);
+}
+
 .szentsegek-box > p {
     font-size: var(--szentsegek-p);
+    color: var(--main-font-clr);
 }
 
 .szentsegek-link:hover .szentsegek-box {
-    background-color: var(--main-bg);
+    background-color: var(--third-clr);
 }
 
 .szentsegek-link:hover .szentsegek-box > h3 {
-    color: var(--szentseg-clr);
+    color: var(--main-clr);
 }
 
 .szentsegek-link:hover .szentsegek-box > p {
     color: var(--main-font-clr);
+    color: var(--main-clr);
 }
 
 #szentsegek > .col:has(a) {
@@ -152,6 +160,14 @@ h3 {
 
 #szentsegek > .col a, #szentsegek > .col a div {
     height: 100%;
+}
+
+main > section:nth-of-type(odd) {
+    background-color: var(--fourth-clr);
+}
+
+.cta-main-padding {
+    padding: var(--main-py) 0;
 }
 
 @media screen and (min-width: 857px) {
@@ -166,11 +182,17 @@ h3 {
     .main-padding {
         padding: var(--main-py) 3rem;
     }
+    .cta-padding {
+        padding: 0 3rem;
+    }
 }
 
 @media screen and (min-width: 992px) {
     .main-padding {
         padding: var(--main-py) 6rem;
+    }
+    .cta-padding {
+        padding: 0 6rem;
     }
 }
 
@@ -178,11 +200,17 @@ h3 {
     .main-padding {
         padding: var(--main-py) 12rem;
     }
+    .cta-padding {
+        padding: 0 12rem;
+    }
 }
 
 @media screen and (min-width: 1400px) {
     .main-padding {
         padding: var(--main-py) 15rem;
+    }
+    .cta-padding {
+        padding: 0 15rem;
     }
 }
 
@@ -200,7 +228,7 @@ h3 {
         padding: 0 1rem;
     }
     .main-header h1 {
-        background-color: rgba(0, 0, 0, 1);
+        background-color: var(--header-bg);
         color: var(--main-clr);
         padding: .5rem 1rem;
     }
